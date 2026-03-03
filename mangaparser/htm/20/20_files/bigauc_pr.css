@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.bigauc_pr {
+  background-color: #000;
+  margin: 0 0 7px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .bigauc_pr {
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bigauc_pr {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+.bigauc_pr .everyday_icon {
+  width: 150px;
+}
+.bigauc_pr .everyday_icon img {
+  width: 100%;
+  max-width: 150px;
+}
+.bigauc_pr .bigauc_icon {
+  width: 150px;
+}
+.bigauc_pr .bigauc_feed {
+  box-sizing: border-box;
+  width: calc(100% - 150px);
+  flex: 1;
+  padding: 10px 2px 0 0;
+}
+@media all and (-ms-high-contrast: none) {
+  .bigauc_pr .bigauc_feed {
+    flex: none;
+    flex-grow: 1;
+  }
+}
+.bigauc_pr .auc_link, .bigauc_pr .auc_link--En, .bigauc_pr .auc_link--Ja {
+  align-items: center;
+  background-color: #d70909;
+  border-radius: 2px;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  font-family: "Noto Sans JP", "sans-serif";
+  height: 28px;
+  justify-content: center;
+  letter-spacing: 1px;
+  margin: 0px 0 10px auto;
+  text-decoration: none;
+  width: calc(100% - 10px);
+}
+.bigauc_pr .auc_link::before, .bigauc_pr .auc_link--En::before, .bigauc_pr .auc_link--Ja::before {
+  background-image: url("https://tools.mandarake.co.jp/tools/img/icon_auction.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 45px;
+}
+.bigauc_pr .auc_link::after, .bigauc_pr .auc_link--En::after, .bigauc_pr .auc_link--Ja::after {
+  display: inline-block;
+  margin-left: 4px;
+}
+.bigauc_pr .auc_link--Ja::after {
+  content: "このカテゴリーのオークション商品はこちら";
+}
+.bigauc_pr .auc_link--En::after {
+  content: "Auction items in this category are here";
+}
+
+.auc_feed {
+  display: flex;
+  height: 150px;
+  overflow: hidden;
+}
+.auc_feed .block {
+  margin: 0 3px 0 0;
+}
+.auc_feed .block img {
+  height: 150px;
+  max-width: 100%;
+}/*# sourceMappingURL=bigauc_pr.css.map */
